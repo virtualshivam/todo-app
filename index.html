@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="stylesheet" href="design/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Heading and theme Change -->
+      <div class="heading-theme flex">
+        <h1 class="logo">TODO</h1>
+        <div class="theme">
+          <img src="images/icon-sun.svg" alt="sun" />
+        </div>
+      </div>
+      
+      <!-- Add Notes  -->
+        <div class="add-note flex">
+          <div class="note-status">
+            <!-- <i class="fas fa-check"></i> -->
+          </div>
+          <input type="text" placeholder="Create a new Todo..." value="Currently typing " />
+        </div>
+
+        <!-- User added notes display -->
+        <div class="notes">
+        <div class="user-notes">
+          <ul>
+            <li class="note-item flex">
+              <div class="task-status">
+                <div class="outer">
+                  <div class="inner">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+              <p>Complete online JavaScript course</p>
+              <div class="remove-note">
+                <span>X</span>
+              </div>
+            </li>
+            <li class="note-item flex">
+              <div class="task-status">
+                <div class="outer">
+                  <div class="inner">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+              <p>Jog around the park 3x</p>
+              <div class="remove-note">
+                <span>X</span>
+              </div>
+            </li>
+            <li class="note-item flex">
+              <div class="task-status">
+                <div class="outer">
+                  <div class="inner">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+              <p>10 minutes meditation</p>
+              <div class="remove-note">
+                <span>X</span>
+              </div>
+            </li>
+            <li class="note-item flex">
+              <div class="task-status">
+                <div class="outer">
+                  <div class="inner">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+              <p>Read for 1 hour</p>
+              <div class="remove-note">
+                <span>X</span>
+              </div>
+            </li>
+            <li class="note-item flex">
+              <div class="task-status">
+                <div class="outer">
+                  <div class="inner">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+              <p>Pick up groceries </p>
+              <div class="remove-note">
+                <span>X</span>
+              </div>
+            </li>
+            <li class="note-item flex">
+              <div class="task-status">
+                <div class="outer">
+                  <div class="inner">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+              <p>Complete Todo App on Frontend Mentor</p>
+              <div class="remove-note">
+                <span>X</span>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+        <div class="notes-data">
+          <div class="remaining-notes flex notes-data-bg">5 items left</div>
+          <div class="notes-filter flex notes-data-bg">
+            <span id="all">All</span>
+            <span id="active">Active</span>
+            <span id="completed">Completed</span>
+          </div>
+          <div class="clear-notes flex notes-data-bg"><p>Clear Completed</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/virtualshivam">Shivam Kumar Choudhary</a>.
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="js/status.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js" integrity="sha512-zYXldzJsDrNKV+odAwFYiDXV2Cy37cwizT+NkuiPGsa9X1dOz04eHvUWVuxaJ299GvcJT31ug2zO4itXBjFx4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/addNotes.js"></script>
+    <script src="js/theme.js"></script>
+    
+  </body>
+</html>
